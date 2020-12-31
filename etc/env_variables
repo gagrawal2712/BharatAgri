@@ -1,3 +1,6 @@
+[django]
+SECRET_KEY = 2pv4lrvaar(_vps*s#$=gp&mp*s51kis&o=z6hyr&sm28s(__e
+
 [database]
 mysql_username=gaurav
 mysql_password=123456

@@ -2,3 +2,4 @@ django
 djangorestframework
 mysqlclient
 jsonfield
+django-cors-headers

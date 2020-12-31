@@ -1,8 +1,7 @@
-from django.urls import path
-from . import views
+from rest_framework import routers
+from .views import AuthViewSet
 
-urlpatterns = [
-    path('sign_up', views.SignUp.as_view()), 
-    path('sign_in', views.SignIn.as_view()),
-    path('sign_out', views.SignOut.as_view()),   
-]
+router = routers.DefaultRouter(trailing_slash=False)
+router.register('', AuthViewSet, basename='auth')
+
+urlpatterns = router.urls
